@@ -1,0 +1,16 @@
+.boton{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form{
+    margin-top: 20px;
+    position: relative;
+    padding: 50px;
+    background-color: blueviolet;
+}
+
+.letra{
+    font-size: 30px;
+    color: white;
+}
