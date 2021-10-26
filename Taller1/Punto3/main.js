@@ -1,27 +1,21 @@
-function convertToRoman(num) {
-    var roman = {
-      M: 1000,
-      CM: 900,
-      D: 500,
-      CD: 400,
-      C: 100,
-      XC: 90,
-      L: 50,
-      XL: 40,
-      X: 10,
-      IX: 9,
-      V: 5,
-      IV: 4,
-      I: 1
-    };
-    var str = '';
-  
-    for (var i of Object.keys(roman)) {
-      var q = Math.floor(num / roman[i]);
-      num -= q * roman[i];
-      str += i.repeat(q);
+function convertToRoman() {
+  let n = document.getElementById("num").value;
+  var
+  valores = [1, 5, 10, 50, 100, 500, 1000],
+  letras = ['I', 'V', 'X', 'L', 'C', 'D', 'M'],
+  res = [],
+  num, letra
+
+for(var i = 6; num = valores[i], letra = letras[i]; i--) {
+  if(n >= num) {
+    var r = Math.floor(n / num); 
+    n -= r * num; 
+    if(r < 4){
+      while(r--){
+        res.push(letra);
+      }
     }
-    return str;
-    console.log(str)
-    
+  }
+} 
+document.getElementById("romano").innerHTML = res
 }
