@@ -5,3 +5,7 @@ function calculo(){
     document.getElementById("resultado").value=respu
     event.preventDefault();
 }
+
+$(document).ready(function() {
+    document.getElementById("jq").innerHTML = "Version de jQuery 3.5.1"; 
+  });

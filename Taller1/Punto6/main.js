@@ -1,18 +1,23 @@
 function numero(){
-var n = document.getElementById("num").value;
-    var i=0;
-    while(i==n){
-        for(i= 1 ; i<=n; i++){
-            var multi = n*i;
-            resultado+=multi
+let n = document.getElementById("num").value;
+    var multi = 1
+    if(n>1){
+        for(var i=1 ; i<=n; i++){
+            multi = multi * i
+            var resultado =+ /*math*/ (multi)
         }
+        //var gomita = toArray(resultado)
+        document.getElementById("resul").value = resultado
     }
-    document.getElementById("resul").value = resultado;
-    document.getElementById("resul").innerHTML=resultado
+    else {
+        document.getElementById("resul").value=n
+    }
+    event.preventDefault(); 
 }
 
-
-
+$(document).ready(function() {
+    document.getElementById("jq").innerHTML = "Version de jQuery 3.5.1"; 
+  });
 
 
 

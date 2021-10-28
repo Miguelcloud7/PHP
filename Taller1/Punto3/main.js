@@ -1,3 +1,6 @@
+$(document).ready(function() {
+  document.getElementById("jq").innerHTML = "Version de jQuery 3.5.1"; 
+});
 function convertToRoman() {
   let n = document.getElementById("num").value;
   var

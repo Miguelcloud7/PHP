@@ -1,6 +1,7 @@
 .boton{
     margin-top: 20px;
     width: 100%;
+
 }
 
 .boton:hover{
@@ -16,7 +17,7 @@
     background-color: blueviolet;
     margin-bottom: 50px;
     top:50px;
-    height: 300px;
+    height: 400px;
     border-radius: 5px;
 }
 
