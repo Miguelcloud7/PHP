@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,37 +11,57 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
 </head>
+
 <body>
     <p style="float: right; font-size: 10px; opacity: 75%; margin-right: 5px;" id="jq"></p>
+    <br>
     <div class="container form">
-    <form class="" action="">
-        <center><label class="letra">Login</label></center>
-        <br><br>
-        <right><label class="letra">Nombre y apellidos</label></right>
-        <input id="nombre" class="form-control form-control" name="peso" type="text"placeholder="">
-        <right><label class="letra">Tipo de documento</label></right>
-        <select class="form-select" aria-label="Default select example" name="dia">
-          <option value="cc" selected >Cedula de ciudadania (C.C)</option>
-          <option value="ti">Tarjeta de identidad (T.I)</option>
-          <option value="ce">Cedula de extranjeria (C.E)</option>
-        </select>
-        <right><label class="letra">Documento</label></right>
-        <input id="doc" class="form-control form-control" name="peso" type="number"placeholder="">
-        <right><label class="letra">Email</label></right>
-        <input id="email" class="form-control form-control" name="peso" type="email"placeholder="">
-        <right><label class="letra">Telefono</label></right>
-        <input id="tel" class="form-control form-control" name="peso" type="tel"placeholder="">
-        <right><label class="letra">Direccion</label></right>
-        <input id="direccion" class="form-control form-control" name="peso" type="text"placeholder="">
-        <right><label class="letra">Contraseña</label></right>
-        <input id="pass" class="form-control form-control" name="peso" type="password"placeholder="">
-        <right><label class="letra">Confirmar Contraseña</label></right>
-        <input id="cpass" class="form-control form-control" name="peso" type="password"placeholder="">
-        <br>
-        <input type="submit" class="btn btn-info boton" value="Registrar" onclick="login()">
-    </form>
+        <form class="">
+            <center><label class="letra">Login</label></center>
+            <br><br>
+            <right><label class="letra">Nombre y apellidos</label></right>
+
+            <input id="nombre" class="form-control form-control" name="nombre" type="text" placeholder="">
+
+            <right><label class="letra">Tipo de documento</label></right>
+
+            <select class="form-select" aria-label="Default select example" name="tipo" id="tipoid">
+
+                <option value="cc" selected >Cedula de ciudadania (C.C)</option>
+
+                <option value="ti">Tarjeta de identidad (T.I)</option>
+
+                <option value="ce">Cedula de extranjeria (C.E)</option>
+
+            </select>
+            <right><label class="letra">documento</label></right>
+
+            <input id="documento" class="form-control form-control" name="documento" type="text" placeholder="" <right>
+
+            <right><label class="letra">Email</label></right>
+
+            <input id="email" class="form-control form-control" name="email" type="email" placeholder="" <right>
+
+            <right><label class="letra">Telefono</label></right>
+
+            <input id="tel" class="form-control form-control" name="tel" type="tel" placeholder="">
+
+            <right><label class="letra">Direccion</label></right>
+
+            <input id="direccion" class="form-control form-control" name="dir" type="text" placeholder="">
+
+            <right><label class="letra">Contraseña</label></right>
+            <input id="pass" class="form-control form-control" name="pass" type="password" placeholder="">
+
+            <right><label class="letra">Confirmar Contraseña</label></right>
+            <input id="cpass" class="form-control form-control" name="cpass" type="password" placeholder="">
+            <br>
+            <input type="submit" class="btn btn-info boton" value="Registrar" onclick="login()">
+
+            <textarea class="textote container " id="resultado" readonly></textarea>
+        </form>
     </div>
-    <p id="res"></p>
     <script src="main.js"></script>
 </body>
+
 </html>
