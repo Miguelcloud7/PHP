@@ -1,31 +1,31 @@
-.boton{
+.boton {
     margin-top: 20px;
     width: 100%;
-
 }
 
-.boton:hover{
-    color:white;
+.boton:hover {
+    color: white;
     transition: all 0.2s ease-out;
 }
 
-.form{
+.form {
     margin-top: 20px;
-    width:50%;
+    width: 50%;
     position: relative;
-    padding:20px;
+    padding: 20px;
     background-color: blueviolet;
     margin-bottom: 50px;
-    top:50px;
-    height: 400px;
+    top: 50px;
+    height: 100%;
     border-radius: 5px;
 }
 
-.letra{
+.letra {
     font-size: 30px;
     color: white;
 }
-.tabla{
+
+.tabla {
     width: 50%;
-    top:150px;
+    top: 150px;
 }
