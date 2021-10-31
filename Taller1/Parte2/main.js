@@ -18,9 +18,13 @@ function login() {
     $("#resultado").show("3000");
     event.preventDefault();
     if (nombre != false && tipoid != false && doc != false && email != false && tel != false && direccion != false && pass != false && cpass != false) {
-
-        document.getElementById("resultado").innerHTML = "Nombre: " + nombre + '\n' + 'Tipo de identificación: ' + tipoid + '\n' + 'Documento: ' + doc + "\n" + "Email: " + email + '\n' + 'Telefono: ' + tel + '\n' + 'Dirección: ' + direccion + '\n' +
-            'Contraseña: ' + pass + '\n' + "Confirmacion de contraseña: " + cpass
+        if (pass == cpass) {
+            document.getElementById("resultado").innerHTML = "Nombre: " + nombre + '\n' + 'Tipo de identificación: ' + tipoid + '\n' + 'Documento: ' + doc + "\n" + "Email: " + email + '\n' + 'Telefono: ' + tel + '\n' + 'Dirección: ' + direccion + '\n' +
+                'Contraseña: ' + pass + '\n' + "Confirmacion de contraseña: " + cpass
+        } else {
+            document.getElementById("resultado").innerHTML = "Las contraseñas no coinciden"
+            document.getElementById("resultado").style.color = "red"
+        }
 
     } else {
         var
@@ -30,10 +34,13 @@ function login() {
             val, dat
 
         for (var i = 0; i <= dat, dat = datos[i], val = values[i]; i++) {
+            res[i] = '';
             if (dat == false) {
                 res[i] = "Sin llenar el " + val
             }
+
         }
-        res[0] + '\n' + res[1] + '\n' + res[2] + '\n' + res[3] + '\n' + res[4] + '\n' + res[5] + '\n' + res[6] + '\n' + res[7])
-}
+    }
+    document.getElementById("resultado").innerHTML = res[0] + '\n' + res[1] + '\n' + res[2] + '\n' + res[3] + '\n' + res[4] + '\n' + res[5] + '\n' + res[6] + '\n' + res[7]
+    document.getElementById("resultado").style.color = "red"
 }
