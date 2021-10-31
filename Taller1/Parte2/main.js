@@ -32,7 +32,7 @@ function login() {
             values = ['Nombre', 'Tipo de documento', 'Documento', 'E-mail', 'Telefono', 'Dirección', 'Contraseña', "Confirmación"],
             res = [],
             val, dat, valor = ''
-            /**I = contador,    */
+            /**I = contador,  mientras i sea menor a dat, dat es igual al datos[de la posicón e i], val es igual al values[de la posicón e i],*/
         for (var i = 0; i <= dat, dat = datos[i], val = values[i]; i++) {
             res[i] = '';
             if (dat == false) {
