@@ -31,16 +31,18 @@ function login() {
             datos = [nombre, tipoid, doc, email, tel, direccion, pass, cpass],
             values = ['Nombre', 'Tipo de documento', 'Documento', 'E-mail', 'Telefono', 'Dirección', 'Contraseña', "Confirmación"],
             res = [],
-            val, dat
-
+            val, dat, valor = ''
+            /**I = contador,    */
         for (var i = 0; i <= dat, dat = datos[i], val = values[i]; i++) {
             res[i] = '';
             if (dat == false) {
                 res[i] = "Sin llenar el " + val
+                if (res[i] != undefined) {
+                    valor += res[i] + '\n'
+                }
             }
-
         }
+        document.getElementById("resultado").innerHTML = valor
+        document.getElementById("resultado").style.color = "red"
     }
-    document.getElementById("resultado").innerHTML = res[0] + '\n' + res[1] + '\n' + res[2] + '\n' + res[3] + '\n' + res[4] + '\n' + res[5] + '\n' + res[6] + '\n' + res[7]
-    document.getElementById("resultado").style.color = "red"
 }
