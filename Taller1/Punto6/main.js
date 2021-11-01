@@ -10,7 +10,7 @@ function numero() {
         var letra = resultado + ""
         var res = 0,
             cant = 0
-        for (let e = letra.length; res == "0" || res == "00" || res == "000" || res == "0000"; e--) {
+        for (let e = letra.length; res == "0"; e--) {
             cont = -1
             res = letra.substr(e - 1, 1)
             cant = letra.substr(e - 1)
