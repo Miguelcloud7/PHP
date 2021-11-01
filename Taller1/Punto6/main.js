@@ -12,10 +12,10 @@ function numero() {
             cant = 0
         for (let e = letra.length; res == "0" || res == "00" || res == "000" || res == "0000"; e--) {
             cont = -1
-            res = letra.substr(e - 1)
+            res = letra.substr(e - 1, 1)
             cant = letra.substr(e - 1)
             if (res != "0") {
-                document.getElementById("resul").value = "El resultado es: " + letra.substr(0, e) + "\nY desde la posición: " + c + " Es: " + letra.substr(c - 1, e - c + 1)
+                document.getElementById("resul").value = "El resultado es: " + letra.substr(0, e) + "\nY desde la posición " + c + " Es: " + letra.substr(c - 1, e - c + 1)
             }
         }
 
