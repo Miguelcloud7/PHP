@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#ejemplo').DataTable();
 });
 
 function alert() {
