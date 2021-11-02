@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
     $('#boton-modal').on('click', function() {
-
-        //El metodo .modal(), se utiliza para abrir la ventana modal de bootstrap 4
         $('#modal-date').modal();
 
     })

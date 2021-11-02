@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('#ejemplo').DataTable();
 });
 
+/**  Ventana emergente */
 function alert() {
     swal({
         text: "Venta emergente",
