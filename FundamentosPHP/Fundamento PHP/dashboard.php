@@ -1,16 +1,32 @@
 <?php
-$Name = $_POST['nombre'];
-$Last_name = $_POST['apellido'];
-$email = $_POST['email'];
-
 session_start();
 if (!isset($_SESSION['Valida'])) {
+  $Name = $_POST['nombre'];
+  $Last_name = $_POST['apellido'];
+  $email = $_POST['email'];
+  if(!empty($_POST)){
+    if (empty($Name)){
+      echo "Esciba el nombre <br>";
+    }
+    if (empty($Last_name)){
+      echo "Esciba el apellido <br>";
+    }
+    if (empty($email)){
+      echo "Esciba el correo <br>";
+    }
+    if (strlen($Name)>15){
+      echo "Esciba el nombre no debe superar los 15 caracteres <br>";
+    }
+  
+  }
     $_SESSION['Valida'] = ["nombre" => $Name, "apellido" => $Last_name, "email" => $email];
-    print_r($_SESSION['Valida']);
+  
+
+    
+
 
 }elseif(isset($_SESSION['Valida'])){
-    echo "hola";
-}
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +36,6 @@ if (!isset($_SESSION['Valida'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -40,6 +55,9 @@ if (!isset($_SESSION['Valida'])) {
   </div>
 </nav>
     
-    <a href=""></a>
+<div class="container">
+    <a href="Puntoc/index.php" class="btn btn-success">Punto C</a>
+    </div>
 </body>
 </html>
+<?php } ?>

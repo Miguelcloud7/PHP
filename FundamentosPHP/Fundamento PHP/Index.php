@@ -25,15 +25,15 @@ if(isset($_SESSION['Valida'])){
             <h1>Formulario</h1>
             <div class="form-group">
                 <label for="exampleInputPassword1">Ingresar Nombre</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Ingresar Apellido</label>
-                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido">
+                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Ingresar E-mail</label>
-                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email">
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email" required>
             </div>
             <br>
             <button type="submit" class="btn btn-primary">Enviar</button>
