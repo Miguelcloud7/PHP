@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <form class="suma" method="post" action="funcion.php" id="formSuma" >
+    <form id="formSuma"  class="suma" >
         <div class="color" >
             <div class="num">
                 <p class="titulo" >Suma Tres Numeros
