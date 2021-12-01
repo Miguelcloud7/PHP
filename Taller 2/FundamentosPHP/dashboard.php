@@ -19,7 +19,11 @@ if (!isset($_SESSION['Valida'])) {
     }
   }
     $_SESSION['Valida'] = ["nombre" => $Name, "apellido" => $Last_name, "email" => $email];
+<<<<<<< HEAD
     $_SESSION['contadorJ'] = 0;
+=======
+
+>>>>>>> e2a6166784ddeddef184ee05d8d09a8458032c4b
 }
 
  

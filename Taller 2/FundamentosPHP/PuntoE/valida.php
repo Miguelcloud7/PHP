@@ -2,6 +2,22 @@
 $nombre = $_POST['nombre'];
 $direccion = $_POST['direccion'];
 $fec_nac = $_POST['fec_nac'];
+<<<<<<< HEAD
+if ($nombre != "" && $direccion !="" && $fec_nac !="") {
+$fec_actual = date("Y-m-d");
+$conv = abs(strtotime($fec_nac)-strtotime($fec_actual));
+$edad  = floor($conv / (365 * 60 * 60 * 24));
+if($edad > 3){
+if ($edad>=18) {
+    $mayor = "mayor de edad";
+}else{
+    $mayor = "menor de edad";
+}
+echo "El aprendiz ".ucfirst($nombre)."\ncon dirección: ".$direccion."\ntiene una edad de ".$edad." años por lo que es ".$mayor." ya que nacio en la fecha: ".$fec_nac." 💝";
+}else{
+    echo "No se admiten Aprendices menores a 3 años de edad 🙄";
+}
+=======
 $dia = substr($fec_nac, 8, 2);
 $mes = substr($fec_nac, 5, 2);
 $año = substr($fec_nac, 0, 4);
@@ -30,5 +46,6 @@ if ($nombre != "" && $direccion !="" && $fec_nac !="") {
         }
             echo "Por favor rellene los campos de nombre o dirección con valores de texto 🤠";
     }
+>>>>>>> 5fde03b1e60841915c260183935df0aa83cb8005
 }
 ?>
