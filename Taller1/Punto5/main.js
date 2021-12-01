@@ -48,9 +48,10 @@ function mercancia(){
         }else if(tipo=="efectivo" & valor>1000000 & promo=="con_promosion"){
             var des= tarifa*60/100
             var env =tarifa-des
+        }else{
+            var des= 0
+            var env =0
         }
-
-
 
    t.innerHTML="$"+tarifa
    vm.innerHTML="$"+valor
@@ -62,3 +63,4 @@ function mercancia(){
     event.preventDefault
 
 }
+
