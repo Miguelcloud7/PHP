@@ -1,5 +1,6 @@
 <?php
     $Tp = $_POST['cantidad'];
+    $cont = $_POST['contadorJ'];
     if($Tp){
         if (is_numeric($Tp)) {
             if ($Tp >= 200000) {

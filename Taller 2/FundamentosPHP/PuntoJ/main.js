@@ -1,6 +1,13 @@
 $(document).ready(function() {
+    var contJ = 1;
+    let data = { "contadorJ": contJ }
+    $.ajax({
+        data: data,
+        url: '../contadores.php',
+        type: 'POST'
+    })
     $("#validacion").submit(function() {
-        var datos = { "cantidad": $("#Tp").val() }
+        var datos = { "cantidad": $("#Tp").val(), "contadorJ": contJ }
         if (datos) {
             $.ajax({
                 data: datos,

@@ -10,6 +10,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../dashboard.php">Dashboard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Hola <?php echo ucfirst($_SESSION['Valida']['nombre'])?></a>
+        <a class="nav-link" href="../cerrarSesion.php">Cerrar Sesion</a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
   <h1>Validar Edad</h1>
 <form class="container needs-validation" id="validacion" action="valida.php" method="post">
   <div>
