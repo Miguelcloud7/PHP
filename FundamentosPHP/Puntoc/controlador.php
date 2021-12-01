@@ -6,7 +6,7 @@
     $tf=$_POST["tf"];
 
     $errores=[];
-    $resultado=[]
+    $resultado=[];
 
     if (!is_numeric($n1)){
         $errores["n1"]=True;
@@ -23,8 +23,8 @@
     if (!is_numeric($tf)){
         $errores["tf"]=True;
     }
-    $notasf=($n1+$n2+$n3)
+    $notasf=($n1+$n2+$n3);
 
-    echo($n1." ".$n2." ".$n3." ".$ef." ".$tf)
+    echo($n1." ".$n2." ".$n3." ".$ef." ".$tf);
 
 ?>
