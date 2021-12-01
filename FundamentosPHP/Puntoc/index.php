@@ -31,6 +31,8 @@
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Nota 1</label>
               <input type="number" class="form-control" id="n1">
+              <span data-key="nota1" class="badge bg-danger"></span>
+              <br>
               <label for="exampleInputEmail1" class="form-label">Nota 2</label>
               <input type="number" class="form-control" id="n2">
               <label for="exampleInputEmail1" class="form-label">Nota 3</label>
@@ -40,7 +42,7 @@
               <label for="exampleInputEmail1" class="form-label">Nota Trabajo Final</label>
               <input type="number" class="form-control" id="tf">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <input type="submit" class="btn btn-primary" value="Enviar">
           </form>
     </div>
     <script>
@@ -48,16 +50,26 @@
             $("#formC").submit(function(){
                 var notas = {"n1":$("#n1").val(),"n2":$("#n2").val(),"n3":$("#n3").val(),"ef":$("#ef").val(),"tf":$("#tf").val()}
                 if(notas.n1!=""&&notas.n2!=""&&notas.n3!=""&&notas.ef!=""&&notas.tf!=""){
+                  formula.find('badge bg-danger').text('');
                   $.ajax({
                     data:notas,
                     url:'controlador.php',
                     type:'POST',
-                    success: function(resultado){
-                      alert(resultado)
-                    }
+                    success:function(resp){
+                    console.log(resp.errores)
+                    if(!resp.respuesta){
+                    for(let k in resp.errores){
+                      $("span[data-key='"+k+"']").text(resp.errores[k]);
+                  }
+                }
+              },
+              dataType: "json"
+                    
                   })
+                  
                 }
             });
+            return fa
         });
     </script>
 </body>

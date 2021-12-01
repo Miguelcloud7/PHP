@@ -6,25 +6,39 @@
     $tf=$_POST["tf"];
 
     $errores=[];
-    $resultado=[]
+    $resultado=[];
 
     if (!is_numeric($n1)){
-        $errores["n1"]=True;
+        $errores["n1"]="El valor no es numerico";
+    }elseif(strlen($n1)>2){
+        $errores["n1"]="El valor no debe superar los 3 digitos";
     }
     if (!is_numeric($n2)){
-        $errores["n2"]=True;
+        $errores["n2"]="El valor no es numerico";
+    }elseif(strlen($n2)>2){
+        $errores["n2"]="El valor no debe superar los 3 digitos";
     }
     if (!is_numeric($n3)){
-        $errores["n3"]=True;
+        $errores["n3"]="El valor no es numerico";
+    }elseif(strlen($n3)>2){
+        $errores["n3"]="El valor no debe superar los 3 digitos";
     }
     if (!is_numeric($ef)){
-        $errores["ef"]=True;
+        $errores["ef"]="El valor no es numerico";
+    }elseif(strlen($ef)>2){
+        $errores["ef"]="El valor no debe superar los 3 digitos";
     }
     if (!is_numeric($tf)){
-        $errores["tf"]=True;
+        $errores["tf"]="El valor no es numerico";
+    }elseif(strlen($tf)>2){
+        $errores["tf"]="El valor no debe superar los 3 digitos";
     }
-    $notasf=($n1+$n2+$n3)
+   
 
-    echo($n1." ".$n2." ".$n3." ".$ef." ".$tf)
+
+    echo json_encode([
+        'respuesta'=>count($errores)===0,
+        'errores'=>$errores
+    ])
 
 ?>
