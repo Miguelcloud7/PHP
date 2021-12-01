@@ -30,47 +30,58 @@
         <form id="formC">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Nota 1</label>
-              <input type="number" class="form-control" id="n1">
-              <span data-key="nota1" class="badge bg-danger"></span>
+              <input type="number" class="form-control" id="n1" name="n1">
+              <span data-key="n1" class="badge bg-danger"></span>
               <br>
               <label for="exampleInputEmail1" class="form-label">Nota 2</label>
-              <input type="number" class="form-control" id="n2">
+              <input type="number" class="form-control" id="n2" name="n2">
+              <span data-key="n2" class="badge bg-danger"></span>
+              <br>
               <label for="exampleInputEmail1" class="form-label">Nota 3</label>
-              <input type="number" class="form-control" id="n3">
+              <input type="number" class="form-control" id="n3" name="n3">
+              <span data-key="n3" class="badge bg-danger"></span>
+              <br>
               <label for="exampleInputEmail1" class="form-label">Nota Examen Final</label>
-              <input type="number" class="form-control" id="ef">
+              <input type="number" class="form-control" id="ef" name="ef">
+              <span data-key="ef" class="badge bg-danger"></span>
+              <br>
               <label for="exampleInputEmail1" class="form-label">Nota Trabajo Final</label>
-              <input type="number" class="form-control" id="tf">
+              <input type="number" class="form-control" id="tf" name="tf">
+              <span data-key="tf" class="badge bg-danger"></span>
+              <br>
             </div>
             <input type="submit" class="btn btn-primary" value="Enviar">
+            <br><br>
+            <input type="text" readonly class="form-control" id="resulf">
+            <br>
           </form>
+
+          
     </div>
     <script>
-        $(document).ready(function(){
-            $("#formC").submit(function(){
-                var notas = {"n1":$("#n1").val(),"n2":$("#n2").val(),"n3":$("#n3").val(),"ef":$("#ef").val(),"tf":$("#tf").val()}
-                if(notas.n1!=""&&notas.n2!=""&&notas.n3!=""&&notas.ef!=""&&notas.tf!=""){
-                  formula.find('badge bg-danger').text('');
-                  $.ajax({
-                    data:notas,
-                    url:'controlador.php',
-                    type:'POST',
-                    success:function(resp){
-                    console.log(resp.errores)
-                    if(!resp.respuesta){
-                    for(let k in resp.errores){
-                      $("span[data-key='"+k+"']").text(resp.errores[k]);
-                  }
-                }
-              },
-              dataType: "json"
-                    
-                  })
-                  
-                }
-            });
-            return fa
+      $(document).ready(function(){
+        let formulario = $("#formC");
+        formulario.submit(function(){
+          formulario.find('.bg-danger').text('');
+          $.ajax({
+            url:"controlador.php",
+            method:"POST",
+            data:{n1:$("#n1").val(),n2:$("#n2").val(),n3:$("#n3").val(),ef:$("#ef").val(),tf:$("#tf").val()},
+            success:function(resp){
+              if(!resp.respuesta){
+                for(let k in resp.errores){
+                  $("span[data-key='"+k+"']").text(resp.errores[k])
+                } 
+              }else{
+                $("#resulf").val(resp.nft)
+              }
+              
+            },
+            dataType: "json"
+          }) // fin del ajax
+          return false
         });
+      });
     </script>
 </body>
 </html>

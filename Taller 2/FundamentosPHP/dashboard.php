@@ -20,9 +20,6 @@ if (!isset($_SESSION['Valida'])) {
   
   }
     $_SESSION['Valida'] = ["nombre" => $Name, "apellido" => $Last_name, "email" => $email];
-  
-
-
 
 }
  
