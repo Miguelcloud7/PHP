@@ -4,34 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Ejercicio 4 camisas</title>
 </head>
 <body>
-<form action="Ejercicio(i).php" method="get">
-        <input type="text" name="c1" id="not1" placeholder="Ingrese la nota 1: ">
- 
-        <input type="submit" value="Enviar">
+    <div class="container">
+<form id="contador" class="con-m">
+        <input style="width: 250px;" type="text" name="c1" id="cc" placeholder="Ingrese la cantidad de camisas"  class="form-control form-control-sm" required>
+        <br>
+        <input style="width: 250px;" type="text" name="c1" id="vc" placeholder="Ingrese el valor de las camisas"  class="form-control form-control-sm" required>
+        <br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <br>
+        <textarea name="text" id="text" style="width: 350px;"></textarea>
 </form>
+    </div>
 
-<?php
-    $v1=0;
-    $v1 = $_GET['c1'];
-    $i=0;
-while ($camisas <= $v1){
- $i++;
-        if($camisas > 3 ){
-             $sumac=$v1;
-             $desc=$sumac/20;
-            echo "el total por las camisas es: ".$desc;
-        }else{
-            $sumac=$v1;
-            $desc=$sumac/10;
-           echo "el total por las camisas es: ".$desc;
-        };
-
-};
-        
-
-    ?>
+<script src="main.js"></script>
 </body>
 </html>

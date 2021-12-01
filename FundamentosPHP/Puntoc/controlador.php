@@ -33,6 +33,7 @@
     }elseif(strlen($tf)>2){
         $errores["tf"]="El valor no debe superar los 3 digitos";
     }
+
    
 
 
@@ -40,5 +41,6 @@
         'respuesta'=>count($errores)===0,
         'errores'=>$errores
     ])
+
 
 ?>
