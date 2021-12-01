@@ -10,9 +10,9 @@
         $sumarnotas = $sumar/4;
 
         if($sumarnotas<=3.5){
-            echo "usted esta reprobado 😆😆 ".$sumarnotas;
+            echo "usted esta reprobado ".$sumarnotas;
         }else{
-            echo "usted esta aprobado 😎😎 ".$sumarnotas;
+            echo "usted esta aprobado ".$sumarnotas;
         }
 
     

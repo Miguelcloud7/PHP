@@ -11,7 +11,7 @@ $(document).ready(function() {
                 }
             })
         } else(
-            $("#text").html("Por favor rellene los campos correcta mente 😀")
+            $("#text").html("Por favor rellene los campos correcta mente")
         )
         return false
     })
