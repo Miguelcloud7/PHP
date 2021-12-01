@@ -1,0 +1,22 @@
+.boton{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 150pc;
+}
+
+.form{
+    margin-top: 20px;
+    padding:50px;
+    width: 50%;
+    background-color: blueviolet;
+
+}
+
+.letra{
+    font-size: 30px;
+    color: white;
+}
+.form-check{
+    color: white;
+}
+
