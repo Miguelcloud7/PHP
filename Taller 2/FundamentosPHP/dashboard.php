@@ -19,11 +19,8 @@ if (!isset($_SESSION['Valida'])) {
     }
   }
     $_SESSION['Valida'] = ["nombre" => $Name, "apellido" => $Last_name, "email" => $email];
-<<<<<<< HEAD
     $_SESSION['contadorJ'] = 0;
-=======
 
->>>>>>> e2a6166784ddeddef184ee05d8d09a8458032c4b
 }
 
  
@@ -75,13 +72,13 @@ if (!isset($_SESSION['Valida'])) {
         <a href="PuntoF/index.php" class="btn btn-success">Punto F | <small>1</small></a>
       </div>
       <div class="">
-        <a href="PuntoG/index.php" class="btn btn-success">Punto G | <small>1</small></a>
+        <a href="PuntoG/Ejercicio(g).php" class="btn btn-success">Punto G | <small>1</small></a>
       </div>
       <div class="">
-        <a href="PuntoH/index.php" class="btn btn-success">Punto H | <small>1</small></a>
+        <a href="PuntoH/Ejercicio(h).php" class="btn btn-success">Punto H | <small>1</small></a>
       </div>
       <div class="">
-        <a href="PuntoI/index.php" class="btn btn-success">Punto I | <small>2</small></a>
+        <a href="PuntoI/Ejercicio(i).php" class="btn btn-success">Punto I | <small>2</small></a>
       </div>
       <div class="">
         <a href="PuntoJ/index.php" class="btn btn-success">Punto J | <small><?php echo $_SESSION['contadorJ'];?></small></a>
