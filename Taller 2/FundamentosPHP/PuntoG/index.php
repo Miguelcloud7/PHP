@@ -3,8 +3,7 @@ session_start();
 if(!isset($_SESSION['Valida'])){
     header("location:../index.php");
 }
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,12 +29,11 @@ if(!isset($_SESSION['Valida'])){
     </div>
   </div>
 </nav>
-
     <form action="proceso.php" method="GET" id="formulario">
         <input type="text" name="d1" id="dat1" placeholder="Ingrese el salario: ">
         <input type="submit" value="Enviar">
 
     </form>
-  
+  <script src="main.js"></script>
 </body>
 </html>

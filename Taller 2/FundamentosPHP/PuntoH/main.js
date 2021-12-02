@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    let contH = 1;
+    let data = { "contadorH": contH }
+    $.ajax({
+        data: data,
+        url: "../contadores.php",
+        type: "POST"
+    })
     $("#notas").submit(function() {
         var nota = { "nota1": $("#nota1").val(), "nota2": $("#nota2").val(), "nota3": $("#nota3").val(), "nota4": $("#nota4").val() }
         if (nota.nota1 != "" && nota.nota2 != "" && nota.nota3 != "" && nota.nota4 != "") {

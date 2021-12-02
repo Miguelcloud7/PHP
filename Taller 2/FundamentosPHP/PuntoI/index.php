@@ -3,8 +3,7 @@ session_start();
 if(!isset($_SESSION['Valida'])){
     header("location:../index.php");
 }
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

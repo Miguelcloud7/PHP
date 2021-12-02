@@ -19,12 +19,17 @@ if (!isset($_SESSION['Valida'])) {
     }
   }
     $_SESSION['Valida'] = ["nombre" => $Name, "apellido" => $Last_name, "email" => $email];
+    $_SESSION['contadorA'] = 0;
+    $_SESSION['contadorB'] = 0;
+    $_SESSION['contadorC'] = 0;
+    $_SESSION['contadorE'] = 0;
+    $_SESSION['contadorG'] = 0;
+    $_SESSION['contadorH'] = 0;
+    $_SESSION['contadorI'] = 0;
     $_SESSION['contadorJ'] = 0;
-
 }
-
- 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,31 +59,32 @@ if (!isset($_SESSION['Valida'])) {
 </nav>
     <div class="botones container">
       <div class="">
-        <a href="PuntoA/index.php" class="btn btn-success">Punto A | <small>1</small></a>
+        <a href="PuntoA/index.php" class="btn btn-success">Punto A | <small><?php echo $_SESSION['contadorA'];?></small></a>
       </div>
       <div class="">
-        <a href="PuntoB/index.php" class="btn btn-success">Punto B | <small>1</small></a>
+        <a href="PuntoB/index.php" class="btn btn-success">Punto B | <small><?php echo $_SESSION['contadorB'];?></small></a>
       </div>  
       <div class="">
-        <a href="PuntoC/index.php" class="btn btn-success">Punto C | <small>1</small></a>
+        <a href="PuntoC/index.php" class="btn btn-success">Punto C | <small><?php echo $_SESSION['contadorC'];?></small></a>
       </div>
       <div class="">
         <a href="PuntoD/index.php" class="btn btn-success">Punto D | <small>1</small></a>
       </div>
       <div class="">
-        <a href="PuntoE/index.php" class="btn btn-success">Punto E | <small>1</small></a>
+        <a href="PuntoE/index.php" class="btn btn-success">Punto E | <small><?php echo $_SESSION['contadorE'];?></small></a>
       </div>
       <div class="">
         <a href="PuntoF/index.php" class="btn btn-success">Punto F | <small>1</small></a>
       </div>
       <div class="">
-        <a href="PuntoG/Ejercicio(g).php" class="btn btn-success">Punto G | <small>1</small></a>
+        <a href="PuntoG/index.php" class="btn btn-success">Punto G | <small><?php echo $_SESSION['contadorG'];?></small></a>
       </div>
       <div class="">
-        <a href="PuntoH/Ejercicio(h).php" class="btn btn-success">Punto H | <small>1</small></a>
+        <a href="PuntoH/index.php" class="btn btn-success">Punto H | <small><?php echo $_SESSION['contadorH'];?></small></a>
       </div>
       <div class="">
-        <a href="PuntoI/Ejercicio(i).php" class="btn btn-success">Punto I | <small>2</small></a>
+        <a href="PuntoI/index.php" class="btn btn-success">Punto I | <small><?php echo $_SESSION['contadorI'];?></small></a>
+
       </div>
       <div class="">
         <a href="PuntoJ/index.php" class="btn btn-success">Punto J | <small><?php echo $_SESSION['contadorJ'];?></small></a>
