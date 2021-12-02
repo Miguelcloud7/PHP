@@ -1,3 +1,39 @@
+<?php 
+class cuentaBancaria {
+    private $nombreCuenta;
+    private $docId;
+    private $saldoActual;
+    private $interes;
+    function __construct($nombreCuenta, $docId, $saldo, $interes){
+        $this->nombreCuenta = $nombreCuenta;
+        $this->docId = $docId;
+        $this->saldo = $saldo;
+        $this->interes = $interes;
+    }
+    function actualizarSaldo(){
+        $this->saldoActual = $this->saldoActual - ($this->interes/100)/365;
+        echo $this->saldoActual;
+    }
+    function ingresar($cant){
+       $this -> $saldoActual = $this->$saldoActual + $cant;
+    }
+    function retirar($cant){
+        if ($saldoActual > 0) {
+            if ($cant < $this->$saldoActual) {
+                $this->$saldoActual = $this->$saldoActual - $cant;
+            }
+        }
+    }
+    function datos(){
+        echo'<h5 class="mb-1">'.$this->nombreCuenta.'</h5>
+            <small>'.$this->docId.'</small>
+            </div>
+            <p class="mb-1">Saldo: '.$this->saldoActual.'</p>
+            <small>Interes '.$this->interes.'%</small>';
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +48,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body>
+<?php $datos = new cuentaBancaria("Jhorman", "1000661096", 100000, 10 ); ?>
 <div class="datos list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-    <div class="d-flex w-100 justify-content-between">
-      
+  <a class="list-group-item list-group-item-action active" aria-current="true">
+    <div class="d-flex w-100 justify-content-between"><?php $datos->datos();?></div>
   </a>
 </div>
 <div class="togger"><i class="fas fa-bars"></i></div>
-<div></div>
+<p><?php $datos->actualizarSaldo();?></p>
+
 <script>
 var menu = document.querySelector('.togger');
 var datos = document.querySelector('.datos');
@@ -30,38 +67,3 @@ menu.onclick=function () {
 </script>
 </body>
 </html>
-<?php 
-class cuentaBancaria {
-    var $nombreCuenta = "";
-    var $docId = "";
-    var $saldoActual = 0;
-    var $interes = 0;
-    function __construct(){
-        
-    }
-    function registrarDatos(){
-
-    }
-    function actualizarSaldo(){
-        $saldoActual = this->$saldoActual + this->$interes/365;
-    }
-    function ingresar($cant){
-        $saldoActual = this->$saldoActual + $cant;
-    }
-    function retirar($cant){
-        if ($saldoActual > 0) {
-            if ($cant < $saldoActual) {
-                $saldoActual = this->$saldoActual - $cant;
-            }
-        }
-    }
-    function datos(){
-        echo '<h5 class="mb-1">Nombre</h5>
-        <small>Documento</small>
-      </div>
-      <p class="mb-1">Saldo</p>
-      <small>Interes</small>';
-    }
-}
-
-?>
