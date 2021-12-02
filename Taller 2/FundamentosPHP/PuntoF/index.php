@@ -30,6 +30,38 @@ if(!isset($_SESSION['Valida'])){
     </div>
   </div>
 </nav>
+  <div class="container">
+  <form id="formC">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Precio del computador</label>
+              <input type="number" class="form-control" id="precio" name="precio">
+              <span data-key="precio" class="badge bg-danger">sds</span>
+              <br>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Enviar">
+            <br>
+            <br>
+            <br>
+            <input type="text" id="resultado" class="form-control" readonly>
+          </form>
+  </div>
+  <script>
+  $(document).ready(function(){
+    $("#formC").submit(function(){
+      var data = {"precio":$("#precio").val()}
+      $.ajax({
+          data: data,
+          url: 'controlador.php',
+          type: 'POST',
+          success: function(data) {
+              $("#resultado").val(data)
+            }
+            });
+        return false;
+      })
+    })
+</script>
 <script src="main.js"></script>
+
 </body>
 </html>

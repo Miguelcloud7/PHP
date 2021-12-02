@@ -1,28 +1,28 @@
 <?php
     class Persona{
 
-        private $documento="";
-        private $nombre="";
-        private $edad=0;
-        private $sexo="M";
-        private $peso=0.0;
-        private $altura=0.0;
-        private $DNI=0;
+        private string $documento="";
+        private string $nombre="";
+        private int $edad=0;
+        private string $sexo="M";
+        private float $peso=0.0;
+        private float $altura=0.0;
+        private int $DNI=0;
 
-        function __construct()
-        {
+        // function __construct()
+        // {
             
-        }
+        // }
 
-        function __construct1($documento,$nombre,$edad,$sexo)
-        {
-            $this->documento=$documento;
-            $this->nombre=$nombre;
-            $this->edad=$edad;
-            $this->sexo=$sexo;
-        }
+        // function __construct0(string $documento,string $nombre,int $edad,string $sexo)
+        // {
+        //     $this->documento=$documento;
+        //     $this->nombre=$nombre;
+        //     $this->edad=$edad;
+        //     $this->sexo=$sexo;
+        // }
 
-        function __construct2($documento,$nombre,$edad,$sexo,$peso,$altura,$DNI)
+        function __construct($documento, $nombre, $edad, $sexo, $peso, $altura, $DNI)
         {
             $this->documento=$documento;
             $this->nombre=$nombre;
@@ -68,7 +68,9 @@
         }
 
         public function listarInformacion(){
-            echo "El documento es: '"+$this->documento+"' <br>, El nombre es: '"+$this->nombre+"'<br> La edad es '"+$this->edad+"' <br> El sexo es: '"+$this->sexo+"' <br> El peso es: '"+$this->peso+"' <br> La altura es: '"+$this->altura+"' <br> El DNI ES: '"+$this->DNI+"'";
+            $txt="El documento es: ".$this->documento."<br>El nombre es:".$this->nombre."<br> La edad es: ".$this->edad." <br> El sexo es: ".$this->sexo." <br> El peso es: ".$this->peso." <br> La altura es: ".$this->altura." <br> El DNI ES: ".$this->DNI."'";
+            echo($txt);
+        
         }
 
         public function generaDNI(){
@@ -79,9 +81,9 @@
        
     }
 
-
-
-    MiPersona = new Persona("232323","David",17, "M", 50.0, 170.5,0);
-
-    Mipersona->listarInformacion()
-,?>
+    $x = new Persona();
+    $s= new Persona("323223","David",17,"M",50,175,0);
+    $x->listarInformacion();
+    echo("<br><br>");
+    $s->listarInformacion();
+?>
