@@ -18,5 +18,18 @@ class cuentaBancaria {
     var $docId;
     var $saldoActual;
     var $interes;
+    function __construct(){
+        
+    }
+    function actualizarSaldo(){
+
+    }
+    function ingresar(){
+
+    }
+    function retirar(){
+
+    }
 }
+
 ?>

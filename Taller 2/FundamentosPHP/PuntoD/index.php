@@ -101,5 +101,6 @@ if(!isset($_SESSION['Valida'])){
               });
             });
           </script>
+          <script src="main.js"></script>
 </body>
 </html>
