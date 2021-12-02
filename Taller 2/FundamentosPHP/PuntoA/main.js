@@ -8,21 +8,25 @@ $(document).ready(function() {
     })
     $("#formSuma").submit(function() {
         var numeros = { "num1": $("#num1").val(), "num2": $("#num2").val(), "num3": $("#num3").val() }
-
-        if (numeros.num1 != "" && numeros.num2 != "" && numeros.num3 != "") {
             $.ajax({
                 data: numeros,
                 url: 'funcion.php',
                 type: 'POST',
                 success: function(data) {
-                    $('#resultado').val(data);
-
-                }
+                    if(!data.respuesta){
+                        for(let k in data.errores){
+                            $("span[data-key='"+k+"']").text(data.errores[k])
+                          }
+                    }
+                    else{
+                        $("#resultado").val(data.nft)
+                    }
+                },
+                dataType: "json"
 
             });
-        } else {
-            alert("Por favor rellene correctamente el formulario")
-        }
-        return false;
+            return false;
+        
+       
     })
 });
