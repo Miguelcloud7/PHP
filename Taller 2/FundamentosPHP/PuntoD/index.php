@@ -75,10 +75,3 @@ if(!isset($_SESSION['Valida'])){
 </body>
 </html>
 
-
-
-constructo={
-  cm=1000;
-  ca=0;
-  
-}
