@@ -24,6 +24,7 @@ if (!isset($_SESSION['Valida'])) {
     $_SESSION['contadorC'] = 0;
     $_SESSION['contadorD'] = 0;
     $_SESSION['contadorE'] = 0;
+    $_SESSION['contadorF'] = 0;
     $_SESSION['contadorG'] = 0;
     $_SESSION['contadorH'] = 0;
     $_SESSION['contadorI'] = 0;
@@ -75,7 +76,7 @@ if (!isset($_SESSION['Valida'])) {
         <a href="PuntoE/index.php" class="btn btn-success">Punto E | <small><?php echo $_SESSION['contadorE'];?></small></a>
       </div>
       <div class="">
-        <a href="PuntoF/index.php" class="btn btn-success">Punto F | <small>1</small></a>
+        <a href="PuntoF/index.php" class="btn btn-success">Punto F | <small><?php echo $_SESSION['contadorF'];?></small></a>
       </div>
       <div class="">
         <a href="PuntoG/index.php" class="btn btn-success">Punto G | <small><?php echo $_SESSION['contadorG'];?></small></a>

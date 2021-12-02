@@ -25,6 +25,11 @@ if ($_POST['contadorE']){
     $contE = $_POST['contadorE'];
     $_SESSION['contadorE'] = $_SESSION['contadorE'] + $contE;
 }
+/** PuntoF */
+if ($_POST['contadorF']){
+    $contF = $_POST['contadorF'];
+    $_SESSION['contadorF'] = $_SESSION['contadorF'] + $contF;
+}
 /** PuntoG */
 if ($_POST['contadorG']){
     $contG = $_POST['contadorG'];
