@@ -23,7 +23,7 @@ if(!isset($_SESSION['Valida'])){
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="../dashboard.php">Regresar</a>
+              <a class="nav-link active" aria-current="page" href="../perfil.php">Hola <?php echo ucfirst($_SESSION['Valida']['nombre'])?></a>
               <a class="nav-link" href="../cerrarSesion.php">Cerrar Sesion</a>
               
             </div>
