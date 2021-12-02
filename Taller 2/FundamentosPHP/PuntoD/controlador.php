@@ -1,6 +1,6 @@
 <?php
 require_once "calculos.php";
-  $empleado=$_POST['salario'];
+  $empleado=$_POST['empleado'];
   $ahorro=$_POST['ahorro'];
 
 
@@ -26,12 +26,29 @@ require_once "calculos.php";
   
     if(count($errores)===0){
         $lista=calculos\calculosM($empleado);
+        $a=$lista[0];
+        $b=$lista[1];
+        $c=$lista[2];
+        $d=$lista[3];
+        $e=$lista[4];
+        echo json_encode([
+            'respuesta'=>count($errores)===0,
+            'errores'=>$errores,
+            'salud'=>$a,
+            'tsalud'=>$b,
+            'pension'=>$c,
+            'tpension'=>$d,
+            'total'=>$e,
+            'salario'=>$empleado,
+            'ahorro'=>$ahorro
+        ]);
+    }else{
+        echo json_encode([
+            'respuesta'=>count($errores)===0,
+            'errores'=>$errores
+        ]);
     }
 
-    echo json_encode([
-        'respuesta'=>count($errores)===0,
-        'errores'=>$errores,
-        'x'=>$lista
-    ])
+    
 
 ?>
