@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    let contI = 1;
+    let data = { "contadorI": contI }
+    $.ajax({
+        data: data,
+        url: "../contadores.php",
+        type: "POST"
+    })
     $("#contador").submit(function() {
         valor_total = { "cantidad": $("#cc").val(), "valor": $("#vc").val() }
         if (valor_total.cantidad != "" && valor_total.valor != "") {

@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if(!isset($_SESSION['Valida'])){
+    header("location:../index.php");
+}
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +16,21 @@
     <title>Ejercicio 4 camisas</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../dashboard.php">Dashboard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Hola <?php echo ucfirst($_SESSION['Valida']['nombre'])?></a>
+        <a class="nav-link" href="../cerrarSesion.php">Cerrar Sesion</a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
     <div class="container">
 <form id="contador" class="con-m">
         <input style="width: 250px;" type="text" name="c1" id="cc" placeholder="Ingrese la cantidad de camisas"  class="form-control form-control-sm" required>
