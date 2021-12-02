@@ -30,6 +30,48 @@ if(!isset($_SESSION['Valida'])){
     </div>
   </div>
 </nav>
-    
+<div class="container">
+<form id="formC">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Salario del empleado</label>
+              <input type="number" class="form-control" id="salE" name="salE">
+              <span data-key="salE" class="badge bg-danger">rtere</span>
+              <br>
+              <label for="exampleInputEmail1" class="form-label">Valor de ahorro mensual</label>
+              <input type="number" class="form-control" id="ahorroMensE" name="ahorroMensE">
+              <span data-key="ahorroMensE" class="badge bg-danger">rer</span>
+              <br>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Enviar">
+          </form>
+          </div>
+
+      <div id="colilla">
+        <h1>COLILLA DE PAGO</h1>
+      <p>
+        hola
+      </p>
+      </div>
+
+          <script> 
+            $(document).ready(function(){
+              $("#colilla").hide();
+              let formulario = $("#formC");
+              formulario.submit(function(){
+                formulario.find('.bg-danger').text('');
+                $.ajax({
+                  url:"controlador.php",
+                  method:"POST",
+                  data:{salario:$("#salE").val(),ahorro:$("#ahorroMensE").val()},
+                  success:function(resul){
+                    alert(resul)
+                  }
+                }); //finaliza el ajax
+                return false
+
+              });
+            });
+          </script>
 </body>
 </html>
+

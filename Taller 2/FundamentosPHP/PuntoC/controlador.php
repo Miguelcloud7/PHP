@@ -4,7 +4,7 @@
     $n3=$_POST["n2"];
     $ef=$_POST["ef"];
     $tf=$_POST["tf"];
-
+ 
     $errores=[];
     $final=0;
 
