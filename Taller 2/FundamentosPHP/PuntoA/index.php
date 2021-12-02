@@ -12,7 +12,7 @@ if(!isset($_SESSION['Valida'])){
     <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<title>Document</title>
+<title>Suma</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
