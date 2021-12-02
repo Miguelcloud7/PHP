@@ -9,19 +9,19 @@ require_once "calculos.php";
   $pensiones=0;
 
     if(empty($empleado)){
-    $errores["n1"]="El campo es requerido";
+    $errores["empleado"]="El campo es requerido";
     }elseif (!is_numeric($empleado)){
-    $errores["n1"]="El valor no es numerico";
+    $errores["empleado"]="El valor no es numerico";
     }elseif(strlen($empleado)>10){
-    $errores["n1"]="El valor no debe superar los 10 digitos";
+    $errores["empleado"]="El valor no debe superar los 10 digitos";
     }
 
     if(empty($ahorro)){
-    $errores["n1"]="El campo es requerido";
+    $errores["ahorro"]="El campo es requerido";
     }elseif (!is_numeric($ahorro)){
-    $errores["n1"]="El valor no es numerico";
+    $errores["ahorro"]="El valor no es numerico";
     }elseif(strlen($ahorro)>10){
-    $errores["n1"]="El valor no debe superar los 10 digitos";
+    $errores["ahorro"]="El valor no debe superar los 10 digitos";
     }
   
     if(count($errores)===0){
@@ -32,7 +32,6 @@ require_once "calculos.php";
         'respuesta'=>count($errores)===0,
         'errores'=>$errores,
         'x'=>$lista
-        
-    ]);
+    ])
 
 ?>

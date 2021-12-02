@@ -64,7 +64,7 @@ if(!isset($_SESSION['Valida'])){
                   method:"POST",
                   data:{salario:$("#salE").val(),ahorro:$("#ahorroMensE").val()},
                   success:function(resul){
-                    
+                    alert(resul)
                   }
                 }); //finaliza el ajax
                 return false
@@ -74,3 +74,11 @@ if(!isset($_SESSION['Valida'])){
           </script>
 </body>
 </html>
+
+
+
+constructo={
+  cm=1000;
+  ca=0;
+  
+}
