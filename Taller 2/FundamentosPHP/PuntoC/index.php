@@ -63,7 +63,7 @@ if(!isset($_SESSION['Valida'])){
           </form>
 
           
-    </div>
+    </div> 
     <script>
       $(document).ready(function(){
         let formulario = $("#formC");
