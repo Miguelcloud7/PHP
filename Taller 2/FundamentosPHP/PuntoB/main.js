@@ -16,8 +16,8 @@ $(document).ready(function() {
                 type: 'POST',
                 success: function(data) {
                     $('#resultado').val(data);
-
                 }
+                
 
             });
         } else {
