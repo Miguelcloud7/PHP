@@ -12,7 +12,12 @@ if(!isset($_SESSION['Valida'])){
     <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<<<<<<< HEAD
 <title>Calcula Iva</title>
+=======
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<title>Document</title>
+>>>>>>> c30c15f5fd108151cc7a00a56cff64b68b049e49
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
