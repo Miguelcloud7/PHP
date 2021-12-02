@@ -6,4 +6,16 @@ $(document).ready(function() {
         url: "../contadores.php",
         type: "POST"
     })
+    $("#formulario").submit(function() {
+        let datos = { "dato": $("#dat1").val() }
+        $.ajax({
+            data: datos,
+            url: "proceso.php",
+            type: "POST",
+            success: function(data) {
+                $("#texto").html(data)
+            }
+        })
+        return false
+    })
 })

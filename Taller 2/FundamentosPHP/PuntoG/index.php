@@ -29,10 +29,11 @@ if(!isset($_SESSION['Valida'])){
     </div>
   </div>
 </nav>
-    <form action="proceso.php" method="GET" id="formulario">
-        <input type="text" name="d1" id="dat1" placeholder="Ingrese el salario: ">
+    <form class="container" action="proceso.php" method="GET" id="formulario">
+        <input type="number" name="d1" id="dat1" placeholder="Ingrese el salario: ">
         <input type="submit" value="Enviar">
-
+        <br><br>
+        <textarea id="texto" style="width:170px;"></textarea>
     </form>
   <script src="main.js"></script>
 </body>

@@ -1,11 +1,17 @@
 <?php
-    $Salario = $_GET['d1'];
+    $Salario = $_POST['dato'];
 
-    if($Salario>2000000){   
-        $x= $Salario/10;
-        $vf = $Salario-$x;
-        echo "Su salario es: ". $vf ;
+    if(is_numeric($Salario)){
+        if(strlen($Salario)>2){
+            if($Salario>=2000000){   
+                $x= $Salario/10;
+                $vf = $Salario-$x;
+                echo "Su salario es: ". $vf ;
+            }else{
+                echo "Su salario es: " . $Salario;
+            }
+        }
     }else{
-        echo "Su salario es: " . $Salario;
-}
+        echo "Por favor ingrese valores númericos";
+    }
 ?>
