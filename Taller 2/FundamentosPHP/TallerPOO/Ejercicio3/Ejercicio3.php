@@ -8,7 +8,10 @@
     public function __construct(int $capacidadMax=1000, int $capacidadAct=0){
         $this->capacidadM=$capacidadMax;
         $this->capacidadA=$capacidadAct; 
-        if(capacidadA>capacidadM);  
+        if($capacidadAct>$capacidadMax){
+            $i=$capacidadAct=$capacidadMax;
+            echo "capacidad actual: ",$i;
+        }  
         
     }
 
@@ -35,15 +38,15 @@
         echo "la cafetera esta vacia, cantidad:  ",$vaciar;
     }
 
-    public function Agregarcafe($cafe){
-       $this->capacidadA+=$cafe;
+    public function Agregarcafe($capacidadAct){
+       echo"usted agrego: ",$capacidadAct,"de cafe";
     }
 
 };
 
 $cafetera = new cafetera;
 
-$cafetera -> llenarcafetera();
+$cafetera -> Agregarcafe(1000);
 
 
  
