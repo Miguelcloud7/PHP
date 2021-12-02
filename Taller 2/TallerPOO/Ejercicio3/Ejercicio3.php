@@ -5,20 +5,33 @@
   public $capacidadAct;
 
 
-    public function __construct(int $capacidadMax=1000, int $capacidadAct=0){
-        $this->capacidadM=$capacidadMax;
-        $this->capacidadA=$capacidadAct; 
-        if($capacidadAct>$capacidadMax){
-            $i=$capacidadAct=$capacidadMax;
-            echo "capacidad actual: ",$i;
-        }  
-        
+  public function __construct0(){
+    $this->capacidadM=1000;
+    $this->capacidadA=0; 
+    $this->__construct1;
+     
+    
+}
+
+  public function __construct1($capacidadAct,$capacidadMax){
+    $this->actual=$capacidadAct;
+    $this->capacidad=$capacidadMax;
+    
     }
 
-    public function llenarcafetera(){
-      $capacidad= $this->capacidadM;
-        echo "la cafetera esta llena, capacidad: ",$capacidad;
+    public function ajustar(){
+        $c=$this->capacidad;
+        $a=$this->actual;
+    if($a>$c){
+        $i=$a=$c;
+        echo "capacidad actual: ",$i;
     }
+}
+    public function llenarcafetera(){
+        $capacidad= $this->capacidadM;
+          echo "la cafetera esta llena, capacidad: ",$capacidad;
+    }
+      
     public function Servirtaza(int $servir){
         $capacidad= $this->capacidadM;
         echo "sirviendo taza......<br>";
@@ -39,15 +52,16 @@
     }
 
     public function Agregarcafe($capacidadAct){
-       echo"usted agrego: ",$capacidadAct,"de cafe";
+       echo"usted agrego: ",$capacidadAct,"  gramos"," de cafe";
     }
 
 };
 
-$cafetera = new cafetera;
+$cafetera = new cafetera(1100,1000);
 
-$cafetera -> Agregarcafe(1000);
+
 
 
  
 ?>
+
