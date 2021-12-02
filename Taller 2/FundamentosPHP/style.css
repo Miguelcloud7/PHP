@@ -1,7 +1,9 @@
 .botones {
-    display: grid;
-    grid-template-columns: repeat(10, auto);
-    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.botones a{
+    margin: 5px 20px;
 }
 
 .botones small {
