@@ -11,6 +11,8 @@ if(!isset($_SESSION['Valida'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio calcular salario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body>
@@ -29,12 +31,15 @@ if(!isset($_SESSION['Valida'])){
     </div>
   </div>
 </nav>
-    <form class="container" action="proceso.php" method="GET" id="formulario">
-        <input type="number" name="d1" id="dat1" placeholder="Ingrese el salario: ">
-        <input type="submit" value="Enviar">
+<div class="con-m"> 
+    <form class="container" action="proceso.php" method="GET" id="formulario" class="form-control">
+        <input type="number" name="d1" id="dat1" placeholder="Ingrese el salario: " class="form-control">   
+        <br>
+        <input type="submit" value="Enviar" class="btn btn-primary">
         <br><br>
-        <textarea id="texto" style="width:170px;"></textarea>
+        <textarea type="text" id="texto" style="width:170px;"></textarea>
     </form>
+</div>
   <script src="main.js"></script>
 </body>
 </html>
