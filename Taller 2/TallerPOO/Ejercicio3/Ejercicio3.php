@@ -5,7 +5,7 @@
   public $capacidadAct;
 
 
-  public function __construct0(){
+  function __construct0(){
     $this->capacidadM=1000;
     $this->capacidadA=0; 
     $this->__construct1;
@@ -13,7 +13,7 @@
     
 }
 
-  public function __construct1($capacidadAct,$capacidadMax){
+  function __construct1($capacidadAct,$capacidadMax){
     $this->actual=$capacidadAct;
     $this->capacidad=$capacidadMax;
     
