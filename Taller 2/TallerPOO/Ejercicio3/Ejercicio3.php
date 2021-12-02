@@ -65,7 +65,6 @@
 
 $cafetera = new cafetera();
 
-$cafetera -> Servirtaza()
 
 
 
