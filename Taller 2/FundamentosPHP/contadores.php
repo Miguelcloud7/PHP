@@ -15,10 +15,20 @@ if ($_POST['contadorC']){
     $contC = $_POST['contadorC'];
     $_SESSION['contadorC'] = $_SESSION['contadorC'] + $contC;
 }
+/** PuntoD */
+if ($_POST['contadorD']){
+    $contD = $_POST['contadorD'];
+    $_SESSION['contadorD'] = $_SESSION['contadorD'] + $contD;
+}
 /** PuntoE */
 if ($_POST['contadorE']){
     $contE = $_POST['contadorE'];
     $_SESSION['contadorE'] = $_SESSION['contadorE'] + $contE;
+}
+/** PuntoF */
+if ($_POST['contadorF']){
+    $contF = $_POST['contadorF'];
+    $_SESSION['contadorF'] = $_SESSION['contadorF'] + $contF;
 }
 /** PuntoG */
 if ($_POST['contadorG']){

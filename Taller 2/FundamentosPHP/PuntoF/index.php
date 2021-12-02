@@ -9,7 +9,8 @@ if(!isset($_SESSION['Valida'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio calcular salario</title>
+    <title>Punto F</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
@@ -29,12 +30,6 @@ if(!isset($_SESSION['Valida'])){
     </div>
   </div>
 </nav>
-    <form class="container" action="proceso.php" method="GET" id="formulario">
-        <input type="number" name="d1" id="dat1" placeholder="Ingrese el salario: ">
-        <input type="submit" value="Enviar">
-        <br><br>
-        <textarea id="texto" style="width:170px;"></textarea>
-    </form>
-  <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
