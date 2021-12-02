@@ -77,5 +77,11 @@
             $this->DNI=$cont;
         }
        
-    } 
-?>
+    }
+
+
+
+    MiPersona = new Persona("232323","David",17, "M", 50.0, 170.5,0);
+
+    Mipersona->listarInformacion()
+,?>
