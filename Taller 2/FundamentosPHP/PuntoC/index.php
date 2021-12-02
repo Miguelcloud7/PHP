@@ -30,7 +30,7 @@ if(!isset($_SESSION['Valida'])){
           </div>
         </div>
       </nav>
-    <div class="container">
+<div class="container">
         <h1>Punto C | Digite los datos: </h1>
         <form id="formC">
             <div class="mb-3">

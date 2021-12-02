@@ -28,9 +28,8 @@ if (!isset($_SESSION['Valida'])) {
     $_SESSION['contadorI'] = 0;
     $_SESSION['contadorJ'] = 0;
 }
-
- 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,6 +84,7 @@ if (!isset($_SESSION['Valida'])) {
       </div>
       <div class="">
         <a href="PuntoI/index.php" class="btn btn-success">Punto I | <small><?php echo $_SESSION['contadorI'];?></small></a>
+
       </div>
       <div class="">
         <a href="PuntoJ/index.php" class="btn btn-success">Punto J | <small><?php echo $_SESSION['contadorJ'];?></small></a>
