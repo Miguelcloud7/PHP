@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('x', function () {
+Route::get('menu', function () {
     return view('layout');
 });
