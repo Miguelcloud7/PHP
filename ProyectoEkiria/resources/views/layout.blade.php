@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('titulo','Menu')</title>
+    <title>Menu</title>
 
     <link rel="shortcut icon" href="../img/logoEkiria.png">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="../css/Menu/styleMenuUsuario.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    @yield('estilo')
 
 </head>
 <!--                            Zona de menú Horizontal header tamaño maximo 50px                  -->
@@ -124,10 +125,125 @@
 
             <div id="div">
                 @yield('contenido')
+
             </div>
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
     <script src="../js/Menu/jsMenuL.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    {{-- complementos de las paginas --}}
+            <!-- carrito de compras  -->
+<div class="offcanvas offcanvas-top carrito" tabindex="1" id="Carrito" aria-labelledby="offcanvasTopLabel" style="height: auto; max-height: 500px; width: 80%; left: 10%;">
+    <div class="offcanvas-header">
+       <h5 id="offcanvasTopLabel">Carrito de Compras</h5>
+       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+       <table class="table table-striped">
+          <thead>
+             <tr>
+                <th scope="col">#</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Servicio</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Acciones</th>
+             </tr>
+          </thead>
+          <tbody>
+             <tr>
+                <th scope="row">1</th>
+                <td><img src="../img/Ventas/uña1.jfif" class="" width="150" height="100"></td>
+                <td>Uñas Sencillas</td>
+                <td>$15000</td>
+                <td>
+                   <div class="borrarCarro">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-trash-fill " viewBox="0 0 16 16">
+                         <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                   </div>
+                </td>
+             </tr>
+             <tr>
+                <th scope="row">2</th>
+                <td><img src="../img/Ventas/uña1.jfif" class="" width="150" height="100"></td>
+                <td>Uñas Sencillas</td>
+                <td>$15000</td>
+                <td>
+                   <div class="borrarCarro">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-trash-fill " viewBox="0 0 16 16">
+                         <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                   </div>
+                </td>
+             </tr>
+             <tr>
+                <th scope="row">3</th>
+                <td><img src="../img/Ventas/uña1.jfif" class="" width="150" height="100"></td>
+                <td>Uñas Sencillas</td>
+                <td>$15000</td>
+                <td>
+                   <div class="borrarCarro">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-trash-fill " viewBox="0 0 16 16">
+                         <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                   </div>
+                </td>
+             </tr>
+             <tr>
+                <th scope="row">4</th>
+                <td><img src="../img/Ventas/uña1.jfif" class="" width="150" height="100"></td>
+                <td>Uñas Sencillas</td>
+                <td>$15000</td>
+                <td>
+                   <div class="borrarCarro">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-trash-fill " viewBox="0 0 16 16">
+                         <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                   </div>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+       <div class="botonesCarrito container">
+          <div class="row">
+             <div class="col"><a type="button" class="d-grid gap-2 btn btn-outline-secondary" data-bs-dismiss="offcanvas" aria-label="Close">Seguir Comprando</a></div>
+             <div class="col"><a href="{% url 'TerminarPedido' %}" type="button" class="d-grid gap-2 btn btn-success">Terminar Pedido</a></div>
+          </div>
+       </div>
+    </div>
+ </div>
+
+     <!-- Modal -->
+  <div class="modal fade" id="VerMasServivios" tabindex="5" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Uñas sencillas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col"><img src="../img/Ventas/uña1.jfif" alt=""></div>
+            <div class="col"><h5>Te presentamos un estilo coqueto donde cada uña de tu mano podrá tener un estilo único podrás elegir donde 2 uñas tendrán un color sólido, dos uñas tendrán dibujos, y una uña tendrá un color brillante </h5></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark d-grid gap-2" data-bs-dismiss="modal">Cerrar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

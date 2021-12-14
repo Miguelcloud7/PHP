@@ -226,7 +226,7 @@ body {
 }
 
 .content .fondo {
-    background: url("/static/Proyecto_Ekiria/Img/fondo.jpg") no-repeat center center;
+    background: url("/img/fondo.jpg") no-repeat center center;
     position: absolute;
     top: 0px;
     min-height: 100%;

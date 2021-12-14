@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VentasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,12 @@ Route::get('/', function () {
 Route::get('x', function () {
     return view('layout');
 });
+
+Route::get('Catalogo',[VentasController::class, 'Catalogo']);
+Route::get('TerminarPedido',[VentasController::class, 'TerminarPedido']);
+Route::get('Citas/Agregar',[VentasController::class, 'AgregarCita']);
+Route::get('Citas/Listar',[VentasController::class, 'ListarCitas']);
+Route::get('Citas/Editar',[VentasController::class, 'EditarCita']);
+Route::get('Servicios/Agregar',[VentasController::class, 'AgregarServicio']);
+Route::get('Servicios/Listar',[VentasController::class, 'ListarServicios']);
+Route::get('Servicios/Editar',[VentasController::class, 'EditarServicio']);
