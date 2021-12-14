@@ -58,7 +58,7 @@
             <label style="font-size: 20px;">Uñas sencillas para ocaciones especiales</label>
         </div>
         <br><br>
-        <a class="btn btn-block btn-success" onclick="ConfirmacionEditarServicio()">Editar Servicio</a>
+        <a class="btn d-grid gap-2 btn-success" onclick="ConfirmacionEditarServicio()">Editar Servicio</a>
         <br><br>
 </div>
 

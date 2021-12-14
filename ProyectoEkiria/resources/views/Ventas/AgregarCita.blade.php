@@ -37,7 +37,7 @@
                     </button>
                   </div>
             </div>
-            
+
                <br><br>
 
                 <table class="table table-striped ">
@@ -83,12 +83,12 @@
                 </div>
 
                 <br><br>
-                <div class="row">
+                <div class="row ">
                     <div class="col">
-                         <a class="btn btn-block btn-secondary" onclick="ConfirmarNoGuardarCita()">Salir</a>
+                         <a class="btn d-grid gap-2 btn-secondary" onclick="ConfirmarNoGuardarCita()">Salir</a>
                     </div>
                     <div class="col">
-                        <a class="btn btn-block btn-success" onclick="GuardarCita()">Guardar</a>
+                        <a class="btn d-grid gap-2 btn-success" onclick="GuardarCita()">Guardar</a>
                     </div>
                 </div>
                 <br><br><br>

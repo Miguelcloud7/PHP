@@ -49,7 +49,7 @@
             <label style="font-size: 20px;">Descripcion</label>
         </div>
         <br><br>
-        <a href="{% url 'listarServicios' %}" class="btn btn-block btn-success">Agregar Servicio</a>
+        <a href="" class="btn d-grid gap-2 btn-success">Agregar Servicio</a>
 </div>
 
 @endsection

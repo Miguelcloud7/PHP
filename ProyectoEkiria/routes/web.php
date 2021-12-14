@@ -22,11 +22,11 @@ Route::get('x', function () {
     return view('layout');
 });
 
-Route::get('Catalogo',[VentasController::class, 'Catalogo']);
-Route::get('TerminarPedido',[VentasController::class, 'TerminarPedido']);
-Route::get('Citas/Agregar',[VentasController::class, 'AgregarCita']);
-Route::get('Citas/Listar',[VentasController::class, 'ListarCitas']);
-Route::get('Citas/Editar',[VentasController::class, 'EditarCita']);
-Route::get('Servicios/Agregar',[VentasController::class, 'AgregarServicio']);
-Route::get('Servicios/Listar',[VentasController::class, 'ListarServicios']);
-Route::get('Servicios/Editar',[VentasController::class, 'EditarServicio']);
+Route::get('Catalogo',[VentasController::class, 'Catalogo'])->name('catalogo');
+Route::get('TerminarPedido',[VentasController::class, 'TerminarPedido'])->name('terminarPedido');
+Route::get('Citas/Agregar',[VentasController::class, 'AgregarCita'])->name('agregarCita');
+Route::get('Citas/Listar',[VentasController::class, 'ListarCitas'])->name('ListarCitas');
+Route::get('Citas/Editar',[VentasController::class, 'EditarCita'])->name('editarCita');
+Route::get('Servicios/Agregar',[VentasController::class, 'AgregarServicio'])->name('agregarServicio');
+Route::get('Servicios/Listar',[VentasController::class, 'ListarServicios'])->name('listarServicios');
+Route::get('Servicios/Editar',[VentasController::class, 'EditarServicio'])->name('editarServicio');

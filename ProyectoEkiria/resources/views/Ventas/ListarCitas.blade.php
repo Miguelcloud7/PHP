@@ -14,7 +14,7 @@
 @section('contenido')
 <h1>Listar Citas</h1>
 <div class="container">
-   <a href="{%url 'agregarCita'%}" type="button" class="agregarCosasGeneral">
+   <a href="{{route('agregarCita')}}" type="button" class="agregarCosasGeneral">
       <i class="fas fa-plus"></i>
     </a>
     <table class="table table-striped">
@@ -33,7 +33,7 @@
               <td>$45.000</td>
               <td>28 de Noviembre del 2021</td>
               <td>Pendiente</td>
-              <td><a href="{%url 'editarCita'%}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
+              <td><a href="{{route('editarCita')}}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
               <td><a type="button" onclick="ConfirmarCita()"><i class="fas fa-check-circle" style="font-size: 25px;" onclick=""></i></a></td>
            </tr>
            <tr>
@@ -41,7 +41,7 @@
             <td>$45.000</td>
             <td>28 de Noviembre del 2021</td>
             <td>Pendiente</td>
-            <td><a href="{%url 'editarCita'%}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
+            <td><a href="{{route('editarCita')}}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
             <td><a type="button" onclick="ConfirmarCita()"><i class="fas fa-check-circle" style="font-size: 25px;" onclick=""></i></a></td>
          </tr>
          <tr>
@@ -49,7 +49,7 @@
             <td>$45.000</td>
             <td>28 de Noviembre del 2021</td>
             <td>Pendiente</td>
-            <td><a href="{%url 'editarCita'%}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
+            <td><a href="{{route('editarCita')}}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
             <td><a type="button" onclick="ConfirmarCita()"><i class="fas fa-check-circle" style="font-size: 25px;" onclick=""></i></a></td>
          </tr>
          <tr>
@@ -57,7 +57,7 @@
             <td>$45.000</td>
             <td>28 de Noviembre del 2021</td>
             <td>Pendiente</td>
-            <td><a href="{%url 'editarCita'%}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
+            <td><a href="{{route('editarCita')}}"><i class="fas fa-eye" style="font-size: 25px;"></i></a></td>
             <td><a type="button" onclick="ConfirmarCita()"><i class="fas fa-check-circle" style="font-size: 25px;" onclick=""></i></a></td>
          </tr>
 
