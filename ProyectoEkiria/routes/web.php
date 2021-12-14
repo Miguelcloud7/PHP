@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('menu', function () {
     return view('layout');
 });
+
+Route::get('prove', function () {
+    return view('proveedores');
+});
+
