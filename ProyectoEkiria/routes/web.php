@@ -18,5 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('f', function () {
+    return view('Vistasx/x');
+});
 
-Route::get('holiss', [PruebaController::class,'prueba']);
+
+Route::get('holiss', [PruebaController::class,'prueba'])->name('lista');
+
+Route::post('guardar', [PruebaController::class,'Guardar'])->name('guardar');
+
+Route::put('actualizar/{empleado}',[PruebaController::class,'Actualizar'])->name('actualizar');
+
+Route::delete('borrar/{empleado}',[PruebaController::class,'Borrar'])->name('borrar');
