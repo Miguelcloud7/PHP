@@ -154,3 +154,7 @@ main {
 	width: 145% !important;
     right: 22% !important;
 }
+
+.modal-backdrop {
+    z-index: -1;
+}

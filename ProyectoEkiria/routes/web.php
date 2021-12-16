@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Proveedorescontroller;
 use Illuminate\Support\Facades\Route;
+use App\Models\Modcompras\proveedores;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,11 @@ Route::get('/', function() {
 Route::get('prove', [Proveedorescontroller::class, 'proveedor'])->name('proveedor');
 Route::get('prod', [Proveedorescontroller::class, 'producto'])->name('producto');
 Route::get('comp', [Proveedorescontroller::class, 'compra'])->name('compra');
-Route::post('prove', [Proveedorescontroller::class, 'guardar'])->name('guardar');
+Route::post('prove', [Proveedorescontroller::class, 'guardarprov'])->name('guardarprov');
+Route::put('prove/{proveedores}', [Proveedorescontroller::class, 'actualizarprov'])->name('actualizarprov');
+Route::delete('prove/{proveedores}', [Proveedorescontroller::class, 'borrarprov'])->name('borrarprov');
+
+
 
 
 
