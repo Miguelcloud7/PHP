@@ -245,5 +245,29 @@
       </div>
     </div>
   </div>
+
+  {{-- _________________________________ --}}
+
+   <!-- Modal -->
+   <div class="modal fade" id="VerMasServicio" tabindex="5" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Uñas sencillas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col"><img src="../img/Ventas/uña1.jfif" alt=""></div>
+            <div class="col"><h5>Te presentamos un estilo coqueto donde cada uña de tu mano podrá tener un estilo único podrás elegir donde 2 uñas tendrán un color sólido, dos uñas tendrán dibujos, y una uña tendrá un color brillante </h5></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark d-grid gap-2" data-bs-dismiss="modal">Cerrar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

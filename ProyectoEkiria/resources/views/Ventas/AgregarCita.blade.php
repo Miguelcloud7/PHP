@@ -1,17 +1,12 @@
-@extends('layout')
+@extends('adminlte::page')
 
+@section('title', 'AgregarCita')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Citas</title>
-    <link rel="stylesheet" href="../css/Ventas/Ventas.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+@section('content_header')
+    <h1>Agregar Citas</h1>
+@stop
 
-</head>
-@section('contenido')
-<h1>Agregar Cita</h1>
+@section('content')
 <div class="container">
     <div class="input-group">
         <label style="margin-right: 20px; margin-top: 10px;"> Buscar Usuarios: </label>
@@ -78,25 +73,41 @@
                     <div class="form-floating container descripcion">
 
                         <textarea class="form-control personalizarServicio"></textarea>
-                        <label style="font-size: 20px;">Comentario</label>
+
                     </div>
                 </div>
 
                 <br><br>
                 <div class="row ">
+
                     <div class="col">
+                        <br><br>
                          <a class="btn d-grid gap-2 btn-secondary" onclick="ConfirmarNoGuardarCita()">Salir</a>
                     </div>
                     <div class="col">
+                        <br><br>
                         <a class="btn d-grid gap-2 btn-success" onclick="GuardarCita()">Guardar</a>
                     </div>
                 </div>
-                <br><br><br>
+                <br><br>
 
-</div>
 
-<script src="../js/Ventas/Ventas.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-@endsection
+        </div>
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+    <link rel="stylesheet" href="../css/Ventas/Ventas.css">
+    <link rel="icon" href="/static/Proyecto_Ekiria/Img/LogoEkiria.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+ @stop
+
+@section('js')
+    <script> console.log('Hi!'); </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+@stop
+
 
 

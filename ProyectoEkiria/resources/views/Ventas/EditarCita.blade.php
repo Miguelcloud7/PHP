@@ -1,17 +1,12 @@
-@extends('layout')
+@extends('adminlte::page')
 
+@section('title', 'Editar Cita')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Citas</title>
-    <link rel="stylesheet" href="../css/Ventas/Ventas.css">
-    <link rel="icon" href="/static/Proyecto_Ekiria/Img/Logo Ekiria.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-</head>
+@section('content_header')
+    <h1>Editar Cita</h1>
+@stop
 
-@section('contenido')
+@section('content')
 <h1>Editar Cita</h1>
 <div class="container-fluid">
 
@@ -103,8 +98,17 @@
 
 </div>
 
+@stop
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+    <link rel="stylesheet" href="../css/Ventas/Ventas.css">
+    <link rel="icon" href="/static/Proyecto_Ekiria/Img/LogoEkiria.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
-<script src="../js/Ventas/Ventas.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ @stop
 
-@endsection
+@section('js')
+    <script> console.log('Hi!'); </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+@stop
