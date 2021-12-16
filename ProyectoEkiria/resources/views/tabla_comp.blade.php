@@ -23,11 +23,10 @@
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
-
- 
+    </tbody>
     <tbody>
       <tr>
         <td>Jose</td>
@@ -40,10 +39,10 @@
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
-
+    </tbody>
     <tbody>
       <tr>
         <td>Jose</td>
@@ -56,10 +55,10 @@
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
-
+    </tbody>
     <tbody>
       <tr>
         <td>Jose</td>
@@ -72,11 +71,10 @@
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
-
-    <tbody>
+      <tbody>
       <tr>
         <td>Jose</td>
         <td>Barniz</td>
@@ -88,9 +86,8 @@
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_compra"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_compra" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
-    
     </tbody>
   </table>

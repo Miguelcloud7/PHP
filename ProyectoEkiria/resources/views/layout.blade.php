@@ -7,12 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('titulo','Menu')</title>
-
     <link rel="shortcut icon" href="../img/logoEkiria.png">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="../css/Menu/styleMenuUsuario.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Proveedores/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
+
 
 </head>
 <!--                            Zona de menú Horizontal header tamaño maximo 50px                  -->
@@ -127,7 +132,11 @@
             </div>
         </div>
     </div>
-    <script src="../js/Menu/jsMenuL.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jsMenuL.js"></script>
+<script src="../js/proveedores/js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script><script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ @yield('script')
 </body>
 </html>

@@ -20,13 +20,13 @@
         <td>color rojo</td>
         <td>5</td>
       </td>
-      <td><img  src="/static/Modulo_compras/img/barniz.jpg" alt=""></td>
+      <td><img  src="../img/Proveedores/barniz.jpg" alt=""></td>
       <td><div class="form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
     
     </tbody>
@@ -39,13 +39,13 @@
         <td>color rojo</td>
         <td>5</td>
       </td>
-      <td><img  src="/static/Modulo_compras/img/barniz.jpg" alt=""></td>
+      <td><img  src="../img/Proveedores/barniz.jpg" alt=""></td>
       <td><div class="form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
     
     </tbody>
@@ -58,33 +58,13 @@
         <td>color rojo</td>
         <td>5</td>
       </td>
-      <td><img  src="/static/Modulo_compras/img/barniz.jpg" alt=""></td>
+      <td><img  src="../img/Proveedores/barniz.jpg" alt=""></td>
       <td><div class="form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
-      </tr>
-    
-    </tbody>
-
-
-    <tbody>
-      <tr>
-        <td>Jose</td>
-        <td>Barniz</td>
-        <td>$8600</td>
-        <td>color rojo</td>
-        <td>5</td>
-      </td>
-      <td><img  src="/static/Modulo_compras/img/barniz.jpg" alt=""></td>
-      <td><div class="form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
-      </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
     
     </tbody>
@@ -98,13 +78,13 @@
         <td>color rojo</td>
         <td>5</td>
       </td>
-      <td><img  src="/static/Modulo_compras/img/barniz.jpg" alt=""></td>
+      <td><img  src="../img/Proveedores/barniz.jpg" alt=""></td>
       <td><div class="form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
     
     </tbody>
@@ -118,13 +98,33 @@
         <td>color rojo</td>
         <td>5</td>
       </td>
-      <td><img  src="/static/Modulo_compras/img/barniz.jpg" alt=""></td>
+      <td><img  src="../img/Proveedores/barniz.jpg" alt=""></td>
       <td><div class="form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked"></label>
       </div>
-      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="/static/Modulo_compras/img/borrar.png" title="Borrar proveeedor"></td>
-      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="/static/Modulo_compras/img/Editar.png" title="Editar proveedor"></td>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
+      </tr>
+    
+    </tbody>
+
+
+    <tbody>
+      <tr>
+        <td>Jose</td>
+        <td>Barniz</td>
+        <td>$8600</td>
+        <td>color rojo</td>
+        <td>5</td>
+      </td>
+      <td><img  src="../img/Proveedores/barniz.jpg" alt=""></td>
+      <td><div class="form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+      </div>
+      <td><img type="button" id="b" data-bs-toggle="modal" data-bs-target="#borrar_prod"src="../img/Proveedores/borrar.png" title="Borrar proveeedor"></td>
+      <td><img type="button" id="e"  data-bs-toggle="modal" data-bs-target="#editar_prod" src="../img/Proveedores/Editar.png" title="Editar proveedor"></td>
       </tr>
     
     </tbody>

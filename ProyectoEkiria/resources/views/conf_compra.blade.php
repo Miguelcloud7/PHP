@@ -1,27 +1,22 @@
-{%extends 'Menu_Usuario.html'%}
+@extends('layout')
+@include('modals')
 
-{% block head %}
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Compras</title>
-   {% include 'modals.html' %}
-   <link rel="stylesheet" href="/static/Modulo_compras/css/style.css">
-   <link rel="icon" href="/static/Proyecto_Ekiria/Img/Logo Ekiria.png">
+   <link rel="stylesheet" href="../css/Proveedores/style.css">
+   <link rel="shortcut icon" href="../img/logoEkiria.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-   <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
-   <script src="/static/bootstrap/js/bootstrap.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <title>@yield('titulo','compras')</title>
 </head>
-{% endblock head %}
-
-
-{% block Contenido %}
 <body>
-<div class="container">
+  @section('contenido')
+  <div class="container">
   <main>
     <a href="#" class="logotipo" id="logotipo">
         <div class="texto-animado" id="logo">COMPRAS</div>
@@ -33,14 +28,19 @@
           <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
         </svg>
       </button>
-  {% include 'tabla_comp.html' %}
+  @include('tabla_comp')
+  
+@endsection
+             
 
-</div>
 </body>
-{% endblock Contenido %}
-{%block scripts%}
-<script src="/static/Proyecto_Ekiria/js/jsMenuL.js"></script>
-<script src="/static/Modulo_compras/js/js.js"></script>
 
-{%endblock scripts%}
+
+
+<script src="../js/jsMenuL.js"></script>
+<script src="../js/proveedores/js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+
+
 </html>

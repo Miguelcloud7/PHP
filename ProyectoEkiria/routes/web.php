@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Proveedorescontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,15 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('menu', function () {
+Route::get('/', function() {
     return view('layout');
 });
 
-Route::get('prove', function () {
-    return view('proveedores');
-});
+Route::get('prove', [Proveedorescontroller::class, 'proveedor'])->name('proveedor');
+Route::get('prod', [Proveedorescontroller::class, 'producto'])->name('producto');
+Route::get('comp', [Proveedorescontroller::class, 'compra'])->name('compra');
+Route::post('prove', [Proveedorescontroller::class, 'guardar'])->name('guardar');
+
+
+
+
 
